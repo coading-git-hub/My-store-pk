@@ -1,113 +1,350 @@
-import Image from "next/image";
+ 
+ 'use client'
+import Contact from './componant/contact/page';
+import React from 'react'
+import Image from 'next/image'
+import img1 from '../../public/shop-hero-1-product-slide-1.jpg'
+import img2 from '../../public/product-cover-5 (1).png'
+import img3 from '../../public/product-cover-5 (2).png'
+import img4 from '../../public/product-cover-5 (3).png'
+import img5 from '../../public/product-cover-5 (4).png'
+import img6 from '../../public/product-colors (1).png'
+import img7 from '../../public/product-cover-5 (6).png'
+import img8 from '../../public/product-cover-5 (7).png'
+import img9 from '../../public/product-cover-5 (5).png'
+import img10 from '../../public/product-cover-5 copy.png'
+import Shoes from '../app/componant/shoes/page'
+import Navbar from './componant/Navebar/page';
+import Footer from './componant/footer/page';
 
-export default function Home() {
+// export default function Home() {
+//   return (
+    
+    {/* <div>
+   <div className="carousel w-full">
+  <div id="slide1" className="carousel-item relative w-full">
+    <Image
+      src={img1}
+      alt="slider"
+     
+      className="w-full" />
+    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" className="btn btn-circle">❮</a>
+      <a href="#slide2" className="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide2" className="carousel-item relative w-full">
+    <Image
+      src={img2}
+     alt="slider"
+     
+     className="w-full" />
+    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" className="btn btn-circle">❮</a>
+      <a href="#slide3" className="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide3" className="carousel-item relative w-full">
+    <Image
+      src={img3}
+     alt="slider"
+     className="w-full" />
+    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" className="btn btn-circle">❮</a>
+      <a href="#slide4" className="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide4" className="carousel-item relative w-full">
+    <Image
+      src={img4}
+      alt="slider"
+      className="w-full" />
+    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" className="btn btn-circle">❮</a>
+      <a href="#slide1" className="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+
+
+
+
+
+ */}
+
+
+ const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+    <div className="w-full">
+  
+      <div className="w-full h-[716px]   relative">
+        <div className="w-full lg:h-[716px] -mt-28  py-[112px]   ">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      src={img1}
+      alt="card"
+     
+      className="w-full" />
+        </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+        <div className="w-full h-[427px] py-[48px] gap-[30px] absolute -mt-[600px] ml-36">
+          <div className=" w-[122px] lg:h-[24px] ">
+            <h5 className="font-[700px] text-[16px] leading-[24px] text-white mt-32 ">
+              SUMMER 2020
+            </h5>
+          </div>
+          <div className="w-[548px] h-[80px]">
+            <h1 className="font-[700] text-[58px] leadinng-[80px] tracking-tight text-white py-6">
+              NEW COLLECTION
+            </h1>
+          </div>
+          <div className="w-[376px] h-[60px] ">
+            <p className="font-[40] text-[20px] text-white mt-8 leading-[30px] tracking-tight">
+              We know how large objects will act, <br />
+              but things on a small scale.
+            </p>
+          </div>
+          <div className="mt-7">
+  
+            <button className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600">
+              Shop Now
+            </button>
+          </div>
+        </div>
+        {/* 2nd page */}
+        
+        
+        <div className="w-[607px] h-[62px] ml-[600px] mb-9 mt-28">
+          <h3 className=" text-[#737373]  font-[500] text-[20px] leading-[30px] ml-9 tracking-tight">
+            Featured Products
+          </h3>
+          <h3 className=" text-[#252B42] w-[381px] lg:h-[34px] font-[700] text-[24px] leading-[32px] tracking-tight mt-4">
+            BESTSELLER PRODUCTS
+          </h3>
+          <p className="w-[347px] h-[20px] font-[400] text-[14px] leading-[20px] tracking-tight text-[#737373] mt-7">
+            Problems trying to resolve the conflict between{" "}
           </p>
-        </a>
+        </div>
+        {/* card1 */}
+        <div className="w-[238px] h-[615px] flex mt-36 ">
+          <div className="w-[239px] h-[427px] ml-52">
+            <div>
+            <Image
+      src={img2}
+      alt="slider"
+     
+      className="w-full" />
+              <div className="ml-14">
+                <h3 className="font-[700] text-[16px] leading-[24px] tracking-tight mt-4">
+                  Graphic Design
+                </h3>
+                <h3 className="font-[700] text-[14px] leading-[24px] tracking-tight mt-2 text-[#737373]">
+                  English Department
+                </h3>
+               
+                <h3 className="w-[108px] h-[34px] px-[7px] py-[5px]">$ 16.4 </h3>{" "}
+                <Image
+      src={img6}
+      alt="color"
+     
+      className="w-full" />
+              </div>
+            </div>
+          </div>
+          {/* card2 */}
+          <div className="lg:w-[239px] lg:h-[427px] ml-20">
+            <div>
+            <Image
+      src={img3}
+      alt="card"
+     
+      className="w-full" />
+              <div className="ml-14">
+                <h3 className="font-[700] text-[16px] leading-[24px] tracking-tight mt-4">
+                  Graphic Design
+                </h3>
+                <h3 className="font-[700] text-[14px] leading-[24px] tracking-tight mt-2 text-[#737373]">
+                  English Department
+                </h3>
+                
+                <h3 className="w-[108px] h-[34px] px-[7px] py-[5px]">$ 16.44 </h3>{" "}
+                 <Image
+      src={img6}
+      alt="color"
+     
+      className="w-full" />
+              </div>
+            </div>
+          </div>
+          {/* card3 */}
+          <div className="lg:w-[239px] lg:h-[427px] ml-20">
+            <div>
+            <Image
+      src={img4}
+      alt="card"
+     
+      className="w-full" />
+              <div className="ml-14">
+                <h3 className="font-[700] text-[16px] leading-[24px] tracking-tight mt-4">
+                  Graphic Design
+                </h3>
+                <h3 className="font-[700] text-[14px] leading-[24px] tracking-tight mt-2 text-[#737373]">
+                  English Department
+                </h3>
+               
+                <h3 className="w-[108px] h-[34px] px-[7px] py-[5px]">$ 36.4 </h3>{" "}
+                <Image
+      src={img6}
+      alt="color"
+     
+      className="w-full" />
+              </div>
+            </div>
+          </div>
+          {/* card4 */}
+          <div className="lg:w-[239px] lg:h-[427px] ml-20">
+            <div>
+            <Image
+      src={img5}
+      alt="card"
+     
+      className="w-full" />
+              <div className="ml-14">
+                <h3 className="font-[700] text-[16px] leading-[24px] tracking-tight mt-4">
+                  Graphic Design
+                </h3>
+                <h3 className="font-[700] text-[14px] leading-[24px] tracking-tight mt-2 text-[#737373]">
+                  English Department
+                </h3>
+                <h3 className="w-[108px] h-[34px] px-[7px] py-[5px]">$ 16.4 </h3>{" "}
+                {/* <h3 className="-mt-7 ml-14">$6.488</h3> */}
+                <Image
+      src={img6}
+      alt="color"
+     
+      className="w-full" />
+              </div>
+            </div>
+          </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          {/* 3rd */}
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <Shoes/>
+        {/*  */}
+        {/* card1 */}
+        <div className="lg:w-[238px] lg:h-[615px] flex mt-7 ml-32">
+          <div className="lg:w-[239px] lg:h-[427px] ml-20">
+            <div>
+            <Image
+      src={img7}
+      alt="card"
+     
+      className="w-full" />
+              <div className="ml-14">
+                <h3 className="font-[700] text-[16px] leading-[24px] tracking-tight mt-4">
+                  Graphic Design
+                </h3>
+                <h3 className="font-[700] text-[14px] leading-[24px] tracking-tight mt-2 text-[#737373]">
+                  English Department
+                </h3>
+                
+                <h3 className="w-[108px] h-[34px] px-[7px] py-[5px]">$ 16.4 </h3>{" "}
+                <Image
+      src={img6}
+      alt="color"
+     
+      className="w-full" />
+              </div>
+            </div>
+          </div>
+          {/* card2 */}
+          <div className="lg:w-[239px] lg:h-[427px] ml-20">
+            <div>
+            <Image
+      src={img8}
+      alt="card"
+     
+      className="w-full" />
+              <div className="ml-14">
+                <h3 className="font-[700] text-[16px] leading-[24px] tracking-tight mt-4">
+                  Graphic Design
+                </h3>
+                <h3 className="font-[700] text-[14px] leading-[24px] tracking-tight mt-2 text-[#737373]">
+                  English Department
+                </h3>
+                <h3 className="w-[108px] h-[34px] px-[7px] py-[5px]">$16.4 </h3>{" "}
+                {/* <h3 className="-mt-7 ml-14">$6.488</h3> */}
+                <Image
+      src={img6}
+      alt="color"
+     
+      className="w-full" />
+              </div>
+            </div>
+          </div>
+          {/* card3 */}
+          <div className="lg:w-[239px] lg:h-[427px] ml-20">
+            <div>
+            <Image
+      src={img9}
+      alt="card"
+     
+      className="w-full" />
+              <div className="ml-14">
+                <h3 className="font-[700] text-[16px] leading-[24px] tracking-tight mt-4">
+                  Graphic Design
+                </h3>
+                <h3 className="font-[700] text-[14px] leading-[24px] tracking-tight mt-2 text-[#737373]">
+                  English Department
+                </h3>
+                
+                <h3 className="w-[108px] h-[34px] px-[7px] py-[5px]">$ 16.4 </h3>{" "}
+                <Image
+      src={img6}
+      alt="color"
+     
+      className="w-full" />
+              </div>
+            </div>
+          </div>
+          {/* card4 */}
+          <div className="lg:w-[239px] lg:h-screen ml-20">
+            <div>
+            <Image
+      src={img10}
+      alt="card"
+     
+      className="w-full" />
+              <div className="ml-14">
+                <h3 className="font-[700] text-[16px] leading-[24px] tracking-tight mt-4">
+                  Graphic Design
+                </h3>
+                <h3 className="font-[700] text-[14px] leading-[24px] tracking-tight mt-2 text-[#737373]">
+                  English Department
+                </h3>
+                
+                <h3 className="w-[108px] h-[34px] px-[7px] py-[5px]">$ 16.44 </h3>{" "}
+                <Image
+      src={img6}
+      alt="color"
+     
+      className="w-full" />
+              </div>
+            </div>
+          </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          {/* 3rd */}
+        </div>
+      
+<Footer/>
+        </div>
+    </div>
   );
-}
+};
+
+export default Home;
+
+        
