@@ -4,11 +4,11 @@ import { product } from "../../../type/products";
 import { useState } from "react";
 import { getCartItems } from "../action/actions";
 import Link from "next/link";
-import { urlFor } from "../../sanity/lib/image";
+import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { CgChevronRight }from "react-icons/cg"
 import Swal from "sweetalert2";
-import { client } from "../../sanity/lib/client"
+import { client } from "@/sanity/lib/client"
 
 const CheckOut = () => {
   const [cartItems, setCartItems] = useState<product[]>([]);

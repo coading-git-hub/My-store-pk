@@ -1,6 +1,8 @@
 
 
-export default  {
+import { defineType } from "sanity";
+
+const orderSchema = defineType({
   name: "order",
   type: "document",
   title: "order",
@@ -43,7 +45,7 @@ export default  {
     {
       name: "cartItem",
       title: "Cart Item",
-      type:'string',
+      type: 'array',
       of: [{ type: "reference", to: { type: "product" } }]
     },
     {
@@ -67,4 +69,5 @@ type:'number'
     }
   ]
   
-}
+});
+export default orderSchema 

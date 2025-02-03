@@ -7,8 +7,6 @@ import { useSelector } from "react-redux";
 import { RootStore } from "../../redux/store";
 
 import { SignedOut, SignedIn, SignInButton, UserButton } from "@clerk/nextjs";
-import ProductPage from "@/app/product/[slug]/page";
-import Cartpage from "@/app/cart/page";
 import { getCartItems } from "@/app/action/actions";
 
 

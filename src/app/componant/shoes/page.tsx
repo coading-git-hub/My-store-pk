@@ -2,14 +2,14 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { client } from "../../../sanity/lib/client";
-import { allProducts, four } from "../../../sanity/lib/queries";
-import { urlFor } from "../../../sanity/lib/image";
+import { allProducts, four } from "@/sanity/lib/queries";
 import { product } from "../../../../type/products";
 import Link from "next/link";
 import { addToCart } from "../../../app/action/actions";
 import Swal from "sweetalert2";
 import Footer from "../footer/page";
+import { urlFor } from "@/sanity/lib/image";
+import { client } from "@/sanity/lib/client";
 
 const Shoes = () => {
   const [product, setProduct] = useState<product[]>([]);
