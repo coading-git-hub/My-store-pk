@@ -48,7 +48,7 @@ source: 'productName',
       {
         name: 'image',
         title: 'Image',
-        type: 'image', // Using Sanity's image type for image field
+        type: 'image', 
         options: {
           hotspot: true,
         },
