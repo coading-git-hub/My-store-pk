@@ -3,11 +3,10 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FiShoppingCart, FiUser, FiMenu, FiX, FiSearch } from "react-icons/fi";
-import { useSelector } from "react-redux";
-import { RootStore } from "../../redux/store";
-
 import { SignedOut, SignedIn, SignInButton, UserButton } from "@clerk/nextjs";
 import { getCartItems } from "@/app/action/actions";
+import { RootStore } from "@/app/redux/store";
+import { useSelector } from "react-redux";
 
 
 const Navbar = () => {

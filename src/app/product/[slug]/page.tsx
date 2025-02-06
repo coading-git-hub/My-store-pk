@@ -1,14 +1,13 @@
  
  
- import { client } from "@/sanity/lib/client";;
+ import { client } from "../../../sanity/lib/client";;
 import { groq } from "next-sanity";
-import { urlFor } from "@/sanity/lib/image";
+import { urlFor } from "../../../sanity/lib/image";
 import Image from "next/image";
-import { product } from "../../../../type/products";
-import Link from "next/link";
 import Footer from "@/app/componant/footer/page";
 import { addToCart } from "@/app/action/actions";
 import Swal from "sweetalert2";
+import { product } from "../../../../type/products";
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;

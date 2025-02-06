@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { product } from '../../../type/products';
 import { getCartItems, removeFromCart, updateCartQuantity } from '../action/actions';
 import Image from 'next/image';
-import { urlFor } from '../../sanity/lib/image';
+import { urlFor } from '@/sanity/lib/image';
 import Swal from 'sweetalert2';
 import Footer from '../componant/footer/page';
 import { useRouter } from "next/navigation";
